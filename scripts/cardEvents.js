@@ -1,7 +1,4 @@
-// CardEvents.js
 document.addEventListener('DOMContentLoaded', () => {
-
-    // Add to cart buttons ONLY
     const addButtons = document.querySelectorAll('.add-to-cart-btn');
 
     addButtons.forEach(btn => {
@@ -26,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Buy now buttons ONLY
     const buyNowButtons = document.querySelectorAll('.add-to-cart-buy-now');
 
     buyNowButtons.forEach(btn => {
@@ -37,10 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const name = btn.dataset.name;
             const price = btn.dataset.price;
 
-            // Add ONE item
             Cart.addItem(id, name, price, 1);
-
-            // Go to cart page
             window.location.href = 'cart.html';
         });
     });

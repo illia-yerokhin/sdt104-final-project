@@ -1,4 +1,3 @@
-// cartPage.js
 document.addEventListener('DOMContentLoaded', () => {
     const cartTableBody = document.getElementById('cart-items');
     const totalDisplay = document.getElementById('cart-total');

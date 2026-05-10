@@ -1,4 +1,3 @@
-// Cart.js
 const Cart = {
     storageKey: 'brewCornerCart',
 

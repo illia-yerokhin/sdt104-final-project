@@ -1,4 +1,3 @@
-// checkoutForm.js
 function initCheckoutForm() {
     const form = document.getElementById('checkout-form');
     if (!form) return;
@@ -46,7 +45,6 @@ function initCheckoutForm() {
     });
 }
 
-// Run immediately if DOM is ready, otherwise wait
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initCheckoutForm);
 } else {

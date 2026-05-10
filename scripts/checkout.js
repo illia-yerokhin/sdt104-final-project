@@ -1,4 +1,3 @@
-// CheckOut.js
 const CheckoutPage = {
     init() {
         this.renderSummary();

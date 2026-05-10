@@ -1,4 +1,3 @@
-// contactForm.js
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contact-form');
     if (!form) return;
