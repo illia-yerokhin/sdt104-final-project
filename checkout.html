@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Checkout at Brew Corner — complete your order for cat mugs, specialty coffee, and cat plushies. Fast and secure delivery.">
+    <meta name="keywords" content="brew corner checkout, buy cat mug online, order specialty coffee, secure checkout">
+    <title>Checkout — Brew Corner</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+    <header id="site-header">
+        <a href="index.html" class="logo">Brew<span>Corner</span></a>
+
+        <button class="burger-menu" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links">
+            <a href="index.html">Catalog</a>
+            <a href="faq.html">FAQ -></a>
+            <a href="contact.html">Contact us -></a>
+        </nav>
+
+        <a href="cart.html" class="cart-link">
+            <span id="cart-badge">0</span>
+            <span class="btn-primary nav-active">Cart</span>
+        </a>
+    </header>
+
+
+    <main>
+        <header class="section-header">
+            <h2>Checkout</h2>
+        </header>
+
+        <section class="checkout-section">
+            <form action="#" id="checkout-form">
+                <!--Table that holds form with information needed for delivery and payment-->
+                <!-- Delivery info -->
+                <h3>Delivery information</h3>
+                <table class="checkout-table">
+                    <tr>
+                        <td><label for="in-name">Full name</label></td>
+                        <td><input id="in-name" type="text" name="name" placeholder="Bob Bobovich" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input id="email" type="email" name="email" placeholder="mail@gmail.com" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="in-country">Country</label></td>
+                        <td><input id="in-country" type="text" name="country" placeholder="Ukraine" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="in-address">Delivery address</label></td>
+                        <td><input id="in-address" type="text" name="address" placeholder="1234 Main St" required /></td>
+                    </tr>
+                </table>
+
+                <!-- Payment info -->
+                <h3>Payment</h3>
+                <table class="checkout-table">
+                    <tr>
+                        <td><label for="card-number">Card number</label></td>
+                        <td><input id="card-number" type="text" name="cardnumber" placeholder="1111 1111 1111 1111" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="exp-date">Expiration date</label></td>
+                        <td><input id="exp-date" type="text" name="expiry" placeholder="MM / YY" required /></td>
+                        <td><label for="cvv">CVV</label></td>
+                        <td><input id="cvv" type="text" name="cvv" placeholder="123" required /></td>
+                    </tr>
+                </table>
+
+                <!--Order summary, now static placeholder-->
+                <h3>Order summary</h3>
+                <table class="checkout-table" id="checkout-summary">
+                    <tbody>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td id="checkout-total"><strong></strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <div>
+                    <a href="cart.html" class="btn-primary">Back to cart</a>
+                    <input type="submit" value="Place order" class="btn-primary"
+                           style="border: none;"/>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Brew Corner. Brewed with love and cats.</p>
+    </footer>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/checkout.js"></script>
+    <script src="scripts/checkoutForm.js"></script>
+    <script src="scripts/menu.js"></script>
+
+</body>
+</html>

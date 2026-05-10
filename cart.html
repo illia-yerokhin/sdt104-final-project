@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your cart with selected coffee and cat mugs. Review your order before checkout.">
+    <meta name="keywords" content="coffee, cart, buy coffee online, cat mugs, mug">
+    <title>Cart — Brew Corner</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+    <header id="site-header">
+        <a href="index.html" class="logo">Brew<span>Corner</span></a>
+
+        <button class="burger-menu" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links">
+            <a href="index.html">Catalog</a>
+            <a href="faq.html">FAQ -></a>
+            <a href="contact.html">Contact us -></a>
+        </nav>
+
+        <a href="cart.html" class="cart-link">
+            <span id="cart-badge">0</span>
+            <span class="btn-primary nav-active">Cart</span>
+        </a>
+    </header>
+
+
+    <main>
+        <header class="section-header">
+            <h2>Your Cart</h2>
+        </header>
+        <!--Cart holds table of items, for now simple static placeholder-->
+        <section class="checkout-section">
+            <table class="checkout-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                </tbody>
+                <tfoot >
+                    <tr>
+                        <td colspan="3"><strong>Total</strong></td>
+                        <td id="cart-total"><strong></strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div>
+                <a href="index.html" class="btn-primary">Continue shopping</a>
+                <a href="checkout.html" class="btn-primary">Proceed to checkout</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Brew Corner. Brewed with love and cats.</p>
+    </footer>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/cartPage.js"></script>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>

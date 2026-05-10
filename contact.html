@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Brew Corner — reach out with questions about our cat mugs, specialty coffee, or cat plushies. We respond within 1 business day.">
+    <meta name="keywords" content="contact brew corner, cat mug shop support, coffee shop contact, customer service">
+    <title>Contact Us — Brew Corner</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+    <header id="site-header">
+        <a href="index.html" class="logo">Brew<span>Corner</span></a>
+
+        <button class="burger-menu" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links">
+            <a href="index.html">Catalog</a>
+            <a href="faq.html">FAQ -></a>
+            <a href="contact.html">Contact us -></a>
+        </nav>
+
+        <a href="cart.html" class="cart-link">
+            <span id="cart-badge">0</span>
+            <span class="btn-primary nav-active">Cart</span>
+        </a>
+    </header>
+
+
+    <main>
+        <header class="section-header">
+            <h2>Contact Us</h2>
+        </header>
+        <!--Form to collect contact info. Elements of form are located inside of table-->
+        <section class="checkout-section" aria-label="Send us a message">
+            <p>Have a question or need help? Fill in the form below, and we'll get back to you as soon as possible.</p>
+
+            <form action="#" id="contact-form">
+                <table class="checkout-table">
+                    <tr>
+                        <td ><label for="in-name" >Your name</label></td>
+                        <td ><input  id="in-name" type="text" name="name" placeholder="Bob Bobovich" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="in-email">Email</label></td>
+                        <td><input id="in-email" type="email" name="email" placeholder="mail@gmail.com" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="in-subject">Subject</label></td>
+                        <td><input id="in-subject" type="text" name="subject" placeholder="Order question, feedback..." required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="in-message">Message</label></td>
+                        <td><textarea id="in-message" name="message" rows="5" placeholder="Write your message here..." required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Send message" class="btn-primary" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+
+        <section class="section-header">
+            <div>
+                <h2>Other ways to reach us</h2>
+                <p>Email: <a href="mailto:hello@brewcorner.com">hello@brewcorner.com</a></p>
+                <p>We usually respond within 1 business day.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Brew Corner. Brewed with love and cats.</p>
+    </footer>
+    <script src="scripts/contactForm.js"></script>
+    <script src="scripts/menu.js"></script>
+
+</body>
+</html>

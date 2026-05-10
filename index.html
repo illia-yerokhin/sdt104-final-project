@@ -1,0 +1,310 @@
+<!Doctype html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Buy coffee online, explore cat mugs and enjoy the best coffee shop experience.">
+        <meta name="keywords" content="coffee, cat cafe, buy coffee online, cat mugs, coffee shop">
+        <title>Brew Corner</title>
+
+    <!--Loading fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <!--loading stylesheet-->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header id="site-header">
+        <a href="index.html" class="logo">Brew<span>Corner</span></a>
+
+        <button class="burger-menu" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links">
+            <a href="index.html">Catalog</a>
+            <a href="faq.html">FAQ -></a>
+            <a href="contact.html">Contact us -></a>
+        </nav>
+
+        <a href="cart.html" class="cart-link">
+            <span id="cart-badge">0</span>
+            <span class="btn-primary nav-active">Cart</span>
+        </a>
+    </header>
+
+    <main>
+        <!--hero, used to show brand related stuff-->
+        <section id="hero">
+            <section>
+                <h1>Brew Corner - your daily dose of <em>purrfect</em> coffee</h1>
+                <p>Custom mugs & special coffee brewed with love, served with cats</p>
+                <ul class="hero-features">
+                    <li style="font-weight: 700">Quality coffee</li>
+                    <li style="font-weight: 700">Fast shipping</li>
+                    <li style="font-weight: 700">CATS!!!</li>
+                </ul>
+            </section>
+        </section>
+
+        <!--Mugs section, holds product-card divs-->
+        <!--Product card has image, short description, price and button to view item
+            On click opens popup with more detailed description-->
+        <section>
+            <header class="section-header">
+                <h2>Mugs</h2>
+                <span class="tag">cat-approved</span>
+            </header>
+            <div class="product-grid">
+
+                <a href="#popup-happy-muggy" class="product-card">
+                    <div class="card-img"><img src="images/happy-muggy.png" alt="Happy Muggy mug"/></div>
+                    <div class="card-body">
+                        <h3>Happy Muggy</h3>
+                        <p>Cheerful mug with tiny feet, makes every sip happier.</p>
+                        <div class="card-footer">
+                            <span class="price">$23.00/unit</span>
+                            <span class="btn-primary">View</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#popup-purrfect-mug" class="product-card">
+                    <div class="card-img"><img src="images/purrfect-mug.png" alt="Purrfect Mug"/></div>
+                    <div class="card-body">
+                        <h3>Purrfect Mug</h3>
+                        <p>Classic shape with a cat silhouette — simple, elegant, purrfect.</p>
+                        <div class="card-footer">
+                            <span class="price">$19.00/unit</span>
+                            <span class="btn-primary">View</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#popup-purr-to-go" class="product-card">
+                    <div class="card-img"><img src="images/purr-to-go.png" alt="Purr To Go travel mug"/></div>
+                    <div class="card-body">
+                        <h3>Purr To Go</h3>
+                        <p>Insulated travel mug for coffee on the move — always warm, always cozy.</p>
+                        <div class="card-footer">
+                            <span class="price">$27.00/unit</span>
+                            <span class="btn-primary">View</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!--Coffee section, holds product-card divs-->
+        <section>
+            <header class="section-header">
+                <h2>Coffee</h2>
+                <span class="tag">Freshly roasted</span>
+            </header>
+            <div class="product-grid">
+
+                <a href="#popup-vanilla-coffee" class="product-card">
+                    <div class="card-img"><img src="images/vanilla-coffee.png" alt="Vanilla coffee bag"/></div>
+                    <div class="card-body">
+                        <h3>Vanilla Coffee</h3>
+                        <p>Medium-roast beans with natural vanilla — soft, sweet aroma.</p>
+                        <div class="card-footer">
+                            <span class="price">$12.50/250g</span>
+                            <span class="btn-primary">View</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#popup-spectrum" class="product-card">
+                    <div class="card-img"><img src="images/spectrum.png" alt="Spectrum coffee blend"/></div>
+                    <div class="card-body">
+                        <h3>Spectrum</h3>
+                        <p>A bold multi-origin blend with layers of fruit, chocolate, and spice.</p>
+                        <div class="card-footer">
+                            <span class="price">$14.00/250g</span>
+                            <span class="btn-primary">View</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!--Plushies section, holds product-card divs-->
+        <section>
+            <header class="section-header">
+                <h2>Plushies</h2>
+                <span class="tag">squish-worthy</span>
+            </header>
+            <div class="product-grid">
+
+                <a href="#popup-avo-cat" class="product-card">
+                    <div class="card-img"><img src="images/avo-cat.png" alt="Avo Cat plushie"/></div>
+                    <div class="card-body">
+                        <h3>Avo Cat</h3>
+                        <p>A round fluffy cat clutching a tiny avocado. Too cute to put down.</p>
+                        <div class="card-footer">
+                            <span class="price">$18.00/unit</span>
+                            <span class="btn-primary">View</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#popup-bean-cat" class="product-card">
+                    <div class="card-img"><img src="images/bean-cat.png" alt="Bean Cat plushie set"/></div>
+                    <div class="card-body">
+                        <h3>Bean Cat</h3>
+                        <p>Squishy bean-shaped cat pillows — comes in white, black, and blue.</p>
+                        <div class="card-footer">
+                            <span class="price">$22.00/unit</span>
+                            <span class="btn-primary">View</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#popup-darkie" class="product-card">
+                    <div class="card-img"><img src="images/darkie.png" alt="Darkie plushie"/></div>
+                    <div class="card-body">
+                        <h3>Darkie</h3>
+                        <p>A big fluffy dark grey cat with giant eyes. Incredibly soft, incredibly dramatic.</p>
+                        <div class="card-footer">
+                            <span class="price">$29.00/unit</span>
+                            <span class="btn-primary">View</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <!--Footer, simply show some info-->
+    <footer class="site-footer">
+        <p>&copy; 2026 Brew Corner. Brewed with love and cats.</p>
+    </footer>
+
+    <!--Product popups-->
+    <!--Popups, each pop-up shows image, full description, has controls to add to cart and buy immediately
+        href="#!" used so when we close pop-up we stay on the same place on our page, instead of scrolling to the top-->
+    <div id="popup-happy-muggy" class="popup-overlay">
+        <div class="popup-box">
+            <a href="#!" class="popup-close">&times;</a>
+            <div class="popup-img"><img src="images/happy-muggy.png" alt="Happy Muggy"></div>
+            <h2>Happy Muggy</h2>
+            <p class="popup-price">$23.00 / unit</p>
+            <p class="popup-desc">A cheerful mug with tiny feet that adds personality to your coffee break and makes every sip a little happier.</p>
+            <div class="popup-actions">
+
+                <button type="button" class="add-to-cart-btn" data-add-to-cart data-id="happy-muggy" data-name="Happy Muggy" data-price="23.00">Add to cart</button>
+                <button type="button" class="add-to-cart-buy-now" data-add-to-cart data-id="happy-muggy" data-name="Happy Muggy" data-price="23.00">Buy now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-purrfect-mug" class="popup-overlay">
+        <div class="popup-box">
+            <a href="#!" class="popup-close">&times;</a>
+            <div class="popup-img"><img src="images/purrfect-mug.png" alt="Purrfect Mug"></div>
+            <h2>Purrfect Mug</h2>
+            <p class="popup-price">$19.00 / unit</p>
+            <p class="popup-desc">Classic shape with a cat silhouette. Simple, elegant, and totally purrfect for your morning routine.</p>
+            <div class="popup-actions">
+                <button type="button" class="add-to-cart-btn" data-add-to-cart data-id="purrfect-mug" data-name="Purrfect Mug" data-price="19.00">Add to cart</button>
+                <button type="button" class="add-to-cart-buy-now" data-add-to-cart data-id="purrfect-mug" data-name="Purrfect Mug" data-price="19.00">Buy now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-purr-to-go" class="popup-overlay">
+        <div class="popup-box">
+            <a href="#!" class="popup-close">&times;</a>
+            <div class="popup-img"><img src="images/purr-to-go.png" alt="Purr To Go"></div>
+            <h2>Purr To Go</h2>
+            <p class="popup-price">$27.00 / unit</p>
+            <p class="popup-desc">An insulated travel mug that keeps your coffee warm on the go. Perfect for commuters who refuse to compromise on cozy.</p>
+            <div class="popup-actions">
+                <button type="button" class="add-to-cart-btn" data-add-to-cart data-id="purr-to-go" data-name="Purr To Go" data-price="27.00">Add to cart</button>
+                <button type="button" class="add-to-cart-buy-now" data-add-to-cart data-id="purr-to-go" data-name="Purr To Go" data-price="27.00">Buy now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-vanilla-coffee" class="popup-overlay">
+        <div class="popup-box">
+            <a href="#!" class="popup-close">&times;</a>
+            <div class="popup-img"><img src="images/vanilla-coffee.png" alt="Vanilla Coffee"></div>
+            <h2>Vanilla Coffee</h2>
+            <p class="popup-price">$12.50 / 250g</p>
+            <p class="popup-desc">Medium-roast beans with natural vanilla flavoring. A soft, sweet aroma that fills your kitchen and your mornings with warmth.</p>
+            <div class="popup-actions">
+                <button type="button" class="add-to-cart-btn" data-add-to-cart data-id="vanilla-coffee" data-name="Vanilla Coffee" data-price="12.50">Add to cart</button>
+                <button type="button" class="add-to-cart-buy-now" data-add-to-cart data-id="vanilla-coffee" data-name="Vanilla Coffee" data-price="12.50">Buy now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-spectrum" class="popup-overlay">
+        <div class="popup-box">
+            <a href="#!" class="popup-close">&times;</a>
+            <div class="popup-img"><img src="images/spectrum.png" alt="Spectrum"></div>
+            <h2>Spectrum</h2>
+            <p class="popup-price">$14.00 / 250g</p>
+            <p class="popup-desc">A bold multi-origin blend with layers of fruit, chocolate, and spice. Every cup reveals something new.</p>
+            <div class="popup-actions">
+                <button type="button" class="add-to-cart-btn" data-add-to-cart data-id="spectrum" data-name="Spectrum" data-price="14.00">Add to cart</button>
+                <button type="button" class="add-to-cart-buy-now" data-add-to-cart data-id="spectrum" data-name="Spectrum" data-price="14.00">Buy now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-avo-cat" class="popup-overlay">
+        <div class="popup-box">
+            <a href="#!" class="popup-close">&times;</a>
+            <div class="popup-img"><img src="images/avo-cat.png" alt="Avo Cat"></div>
+            <h2>Avo Cat</h2>
+            <p class="popup-price">$18.00 / unit</p>
+            <p class="popup-desc">A round, impossibly soft white cat plushie holding a tiny avocado. Your desk's new best friend.</p>
+            <div class="popup-actions">
+                <button type="button" class="add-to-cart-btn" data-add-to-cart data-id="avo-cat" data-name="Avo Cat" data-price="18.00">Add to cart</button>
+                <button type="button" class="add-to-cart-buy-now" data-add-to-cart data-id="avo-cat" data-name="Avo Cat" data-price="18.00">Buy now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-bean-cat" class="popup-overlay">
+        <div class="popup-box">
+            <a href="#!" class="popup-close">&times;</a>
+            <div class="popup-img"><img src="images/bean-cat.png" alt="Bean Cat"></div>
+            <h2>Bean Cat</h2>
+            <p class="popup-price">$22.00 / unit</p>
+            <p class="popup-desc">Squishy bean-shaped cat pillows in white, black, and blue. Stack them, hug them, or just stare at them.</p>
+            <div class="popup-actions">
+                <button type="button" class="add-to-cart-btn" data-add-to-cart data-id="bean-cat" data-name="Bean Cat" data-price="22.00">Add to cart</button>
+                <button type="button" class="add-to-cart-buy-now" data-add-to-cart data-id="bean-cat" data-name="Bean Cat" data-price="22.00">Buy now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-darkie" class="popup-overlay">
+        <div class="popup-box">
+            <a href="#!" class="popup-close">&times;</a>
+            <div class="popup-img"><img src="images/darkie.png" alt="Darkie"></div>
+            <h2>Darkie</h2>
+            <p class="popup-price">$29.00 / unit</p>
+            <p class="popup-desc">A large, fluffy dark grey cat with oversized expressive eyes. Dramatically soft. Suspiciously judgemental.</p>
+            <div class="popup-actions">
+                <button type="button" class="add-to-cart-btn" data-add-to-cart data-id="darkie" data-name="Darkie" data-price="29.00">Add to cart</button>
+                <button type="button" class="add-to-cart-buy-now" data-add-to-cart data-id="darkie" data-name="Darkie" data-price="29.00">Buy now</button>
+            </div>
+        </div>
+    </div>
+<script src="scripts/cart.js"></script>
+<script src="scripts/cardEvents.js"></script>
+<script src="scripts/menu.js"></script>
+
+</body>
+</html>
