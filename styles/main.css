@@ -78,7 +78,7 @@ main {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    justify-content: space-between;
+    justify-content: normal;
     gap: var(--gap-s)
 }
 #site-header .nav-links {
@@ -88,7 +88,7 @@ main {
     gap: var(--gap-s);
     overflow-x: visible;
     grid-auto-flow: unset;
-    justify-content: unset;
+    justify-content: center;
 }
 #site-header .nav-links a {
     font-size: var(--font-size-m);
@@ -100,6 +100,18 @@ main {
 }
 #site-header .nav-links a:hover {
     color: var(--dark);
+}
+#site-header nav {
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-s);
+    width: 100%;
+    max-width: 100%;
+}
+#site-header nav a {
+    white-space: nowrap;
 }
 .logo {
     font-family: 'Yrsa', serif;
